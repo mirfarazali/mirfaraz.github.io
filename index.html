@@ -1,10 +1,119 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Game Dev Portfolio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #0f0f0f;
+      color: #f0f0f0;
+    }
+    header {
+      background: #1e1e1e;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      color: #00ff88;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #f0f0f0;
+      font-weight: bold;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: #1a1a1a;
+      border-radius: 10px;
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.2s;
+    }
+    .card:hover {
+      transform: scale(1.05);
+    }
+    .card img {
+      width: 100%;
+      border-radius: 8px;
+    }
+    iframe {
+      width: 100%;
+      height: 315px;
+      border: none;
+      border-radius: 10px;
+    }
+    footer {
+      background: #1e1e1e;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
 </head>
 <body>
-  <h1>Hello, Im faraz</h1>
-  <p>Welcome to my portfolio website!</p>
+  <header>
+    <h1>Hi, Im [Your Name] 🎮</h1>
+    <p>Game Developer | YouTuber | Creator</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#youtube">YouTube</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      Im a passionate game developer who loves building fun and creative worlds. 
+      I also run a YouTube channel where I share devlogs, tutorials, and gameplay videos. 
+    </p>
+  </section>
+
+  <section id="projects">
+    <h2>My Games</h2>
+    <div class="projects">
+      <div class="card">
+        <img src="https://via.placeholder.com/400x200" alt="Game 1">
+        <h3>Game Title 1</h3>
+        <p>A short description of your game project.</p>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/400x200" alt="Game 2">
+        <h3>Game Title 2</h3>
+        <p>A short description of another project.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="youtube">
+    <h2>From My YouTube Channel</h2>
+    <p>Check out my latest video:</p>
+    <iframe src="https://www.youtube.com/" allowfullscreen></iframe>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email me at: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
+  </section>
+
+  <footer>
+    <p>© 2025 [Your Name] | Built with ❤️</p>
+  </footer>
 </body>
 </html>
